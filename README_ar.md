@@ -6,7 +6,10 @@
   <img src="assets/icon.png" width="120" alt="شعار Vibe-Trading"/>
 </p>
 
-<h1 align="center">Vibe-Trading: وكيل التداول الشخصي الخاص بك</h1>
+<h1 align="center">Vibe-Trading-L2: وكيل التداول الشخصي الخاص بك</h1>
+
+> [!IMPORTANT]
+> This is an independent, unofficial community fork of [HKUDS/Vibe-Trading](https://github.com/HKUDS/Vibe-Trading). Free public data remains the default; this fork adds an optional read-only [Lovel2 A-share Level-2 integration](wiki/Lovel2-L2.md). No affiliation or endorsement is implied.
 
 <p align="center">
   <b>أمر واحد يمنح وكيلك قدرات تداول شاملة</b>

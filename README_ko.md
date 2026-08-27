@@ -6,7 +6,10 @@
   <img src="assets/icon.png" width="120" alt="Vibe-Trading 로고"/>
 </p>
 
-<h1 align="center">Vibe-Trading: 당신의 개인 트레이딩 에이전트</h1>
+<h1 align="center">Vibe-Trading-L2: 당신의 개인 트레이딩 에이전트</h1>
+
+> [!IMPORTANT]
+> This is an independent, unofficial community fork of [HKUDS/Vibe-Trading](https://github.com/HKUDS/Vibe-Trading). Free public data remains the default; this fork adds an optional read-only [Lovel2 A-share Level-2 integration](wiki/Lovel2-L2.md). No affiliation or endorsement is implied.
 
 <p align="center">
   <b>한 번의 명령으로 에이전트에 종합적인 트레이딩 역량을 더하세요</b>

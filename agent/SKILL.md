@@ -133,7 +133,7 @@ Comprehensive knowledge base covering:
 
 Use `load_skill(name)` to access full methodology docs with code templates.
 
-## Available MCP Tools (74)
+## Available MCP Tools (75)
 
 | Tool | Description | API Key |
 |------|-------------|---------|
@@ -208,6 +208,7 @@ Use `load_skill(name)` to access full methodology docs with code templates.
 | `quantlib_call` | Pure-compute finance math — 265 functions across 19 quantlib modules | None |
 | `cashflow_performance` | XIRR / MOIC / DPI / TVPI / TWR / Modified Dietz over dated cash flows | None |
 | `orderbook_depth` | Crypto L2 ladder — spread bps, depth imbalance, impact cost | None |
+| `get_lovel2_l2` | Optional local A-share L2 — 10-level snapshot, orders, transactions | `LOVEL2_JSONL_PATH` |
 | `sentiment` | Local lexicon text scoring + crypto Fear & Greed Index | None |
 | `technical_indicators` | RSI / MACD / Bollinger / SMA / EMA through the existing loaders | None* |
 | `get_fundamentals` | PIT-safe SEC fundamentals panels (filed-date anchored) | None |

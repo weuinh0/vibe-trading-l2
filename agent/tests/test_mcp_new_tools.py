@@ -1,8 +1,9 @@
-"""MCP exposure of the institutional-research & alternative-data tools.
+"""MCP exposure of mirrored read-only research and market-data tools.
 
 Covers the four tools that reach the MCP surface by mirroring their own JSON
 Schema (``get_institutional_holdings`` / ``etf_holdings`` /
-``prediction_market`` / ``research_papers``) and the red-line regression that
+``prediction_market`` / ``research_papers``), the optional local Lovel2 tool,
+and the red-line regression that
 guards *which* tools the MCP server is allowed to surface at all.
 
 No network: the only test that actually invokes a tool swaps the mcp_server
@@ -28,6 +29,7 @@ MIRRORED_TOOL_NAMES = (
     "etf_holdings",
     "prediction_market",
     "research_papers",
+    "get_lovel2_l2",
 )
 
 # Tools that mutate state (is_readonly is not True on the agent side) but are
@@ -86,13 +88,13 @@ def _tool_classes() -> dict[str, Any]:
 # ---------------------------------------------------------------------------
 
 
-def test_institutional_research_tools_are_exposed_via_mcp() -> None:
-    """All four institutional-research tools must reach the MCP surface."""
+def test_mirrored_research_and_market_tools_are_exposed_via_mcp() -> None:
+    """The explicitly mirrored read-only tools must reach the MCP surface."""
     registered = set(_mcp_tools())
 
     missing = set(MIRRORED_TOOL_NAMES) - registered
     assert not missing, (
-        f"MCP server is missing institutional-research tools: {sorted(missing)}. "
+        f"MCP server is missing mirrored read-only tools: {sorted(missing)}. "
         "Check _mirrored_tool_classes() in mcp_server.py."
     )
 
@@ -102,8 +104,8 @@ def test_mcp_tool_count_covers_the_mirrored_tools() -> None:
     tools = _mcp_tools()
 
     assert (
-        len(tools) >= 59
-    ), f"Expected at least 59 MCP tools (55 pre-existing + 4 mirrored), found {len(tools)}."
+        len(tools) >= 60
+    ), f"Expected at least 60 MCP tools (55 pre-existing + 5 mirrored), found {len(tools)}."
 
 
 def test_mirrored_tool_names_match_the_agent_side_registry() -> None:

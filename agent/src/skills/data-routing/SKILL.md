@@ -67,6 +67,7 @@ is required only where listed (no key listed = free / no auth).
 | Symbol search | `search_symbol` | A-share, US, HK, Canada, crypto/index/FX | — |
 | Macro / FRED series | `get_macro_series` | Macro (US/global) | `FRED_API_KEY` |
 | iWenCai NL search (问财) | `iwencai_search` | A-share | `VIBE_TRADING_IWENCAI_KEY` |
+| Real-time 10-level book / orders / transactions | `get_lovel2_l2` | A-share SSE/SZSE | `LOVEL2_JSONL_PATH` |
 
 Notes:
 - `get_financial_statements` reads US statements from SEC EDGAR companyfacts
@@ -90,6 +91,8 @@ same-market sources automatically. Only set a concrete source when the user asks
 2. If the need is plain OHLCV, call `get_market_data` and let source fallback run.
 3. Set any required env key before calling a key-gated tool; if it is missing,
    report the missing key rather than failing silently.
+4. Use `get_lovel2_l2` only for real-time microstructure when its local JSONL is
+   configured. Keep free public providers as the default for ordinary OHLCV.
 
 ### Source priority (for OHLCV by market)
 

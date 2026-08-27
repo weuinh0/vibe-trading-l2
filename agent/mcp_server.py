@@ -6,7 +6,7 @@ Zero API key required for HK/US/crypto research markets (yfinance, OKX,
 AKShare are free). Trading connector tools are profile-scoped and require the
 selected connector's own local app or OAuth setup.
 
-Surfaces 74 tools: skills, research goals, strategy discovery,
+Surfaces 75 tools: skills, research goals, strategy discovery,
 backtest/factor/options/pattern
 analysis, market data, fundamentals & capital-flow & news & discovery
 (get_fund_flow / get_dragon_tiger / get_northbound_flow / get_margin_trading /
@@ -18,6 +18,7 @@ qveris_search / qveris_inspect / qveris_execute),
 institutional-research and alternative data (get_institutional_holdings /
 etf_holdings / prediction_market / research_papers), read-only finance math and
 market analytics (quantlib_call / cashflow_performance / orderbook_depth /
+get_lovel2_l2 /
 sentiment / technical_indicators / get_fundamentals), read-only
 trading-connector reads, swarm orchestration, trade-journal and shadow-account
 analysis. Every exposed tool is read-only or research-only except
@@ -2382,6 +2383,7 @@ _MIRRORED_TOOL_SOURCES = (
     ("src.tools.quantlib_tool", "QuantlibCallTool"),
     ("src.tools.cashflow_analytics_tool", "CashFlowPerformanceTool"),
     ("src.tools.orderbook_depth_tool", "OrderBookDepthTool"),
+    ("src.tools.lovel2_l2_tool", "Lovel2L2Tool"),
     ("src.tools.sentiment_tool", "SentimentTool"),
     ("src.tools.technical_indicator_tool", "TechnicalIndicatorTool"),
     ("src.tools.get_fundamentals_tool", "GetFundamentalsTool"),

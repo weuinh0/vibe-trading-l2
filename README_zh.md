@@ -6,7 +6,10 @@
   <img src="assets/icon.png" width="120" alt="Vibe-Trading Logo"/>
 </p>
 
-<h1 align="center">Vibe-Trading：你的个人交易智能体</h1>
+<h1 align="center">Vibe-Trading-L2：你的个人交易智能体</h1>
+
+> [!IMPORTANT]
+> 这是基于 [HKUDS/Vibe-Trading](https://github.com/HKUDS/Vibe-Trading) 的独立、非官方社区分支。原有免费公开数据源仍是默认选项，本分支新增可选的只读 [Lovel2 A 股 Level-2 接入](wiki/Lovel2-L2.md)。本项目不隶属于 HKUDS 或 vn.py，也未获得其官方背书。
 
 <p align="center">
   <b>一条命令，让你的智能体具备完整交易研究能力</b>

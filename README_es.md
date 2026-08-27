@@ -6,7 +6,10 @@
   <img src="assets/icon.png" width="120" alt="Vibe-Trading Logo"/>
 </p>
 
-<h1 align="center">Vibe-Trading: Tu Agente de Trading Personal</h1>
+<h1 align="center">Vibe-Trading-L2: Tu Agente de Trading Personal</h1>
+
+> [!IMPORTANT]
+> This is an independent, unofficial community fork of [HKUDS/Vibe-Trading](https://github.com/HKUDS/Vibe-Trading). Free public data remains the default; this fork adds an optional read-only [Lovel2 A-share Level-2 integration](wiki/Lovel2-L2.md). No affiliation or endorsement is implied.
 
 <p align="center">
   <b>Un Solo Comando para Dotar a tu Agente de Capacidades Integrales de Trading</b>

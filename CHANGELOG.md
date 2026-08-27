@@ -5,6 +5,15 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- **Optional Lovel2 A-share Level-2 integration** — the read-only
+  `get_lovel2_l2` tool consumes an operator-pinned local customer JSONL and
+  exposes ten-level snapshots, exchange order events, and transactions. The
+  model cannot choose a filesystem path; reads are tail-bounded, incomplete
+  lines are ignored, freshness is explicit, and amount fields remain raw where
+  provider units vary. Existing free public data providers remain the default.
+
 ## [0.1.14] — 2026-08-20
 
 Rolls up 272 commits / 74 merged pull requests since 0.1.13.
